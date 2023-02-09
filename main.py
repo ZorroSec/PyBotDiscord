@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from config import bot
+from commands import pong 
 
 @bot.event
 async def on_ready():
@@ -13,6 +14,7 @@ async def on_message(msg: discord.Message):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong!')
+    await pong(ctx)
 
-bot.run('MTA3MDUzNTM0NDQ0NzAyOTI3OA.GtCpSu.Lz-6Lz-_V9VUyhBm4HTjHRV0uIjYvYFas4VbVU')
+
+bot.run('MTA3MDUzNTM0NDQ0NzAyOTI3OA.Gr8AXJ.4-IXbHHgjkSyAjA86k2SnHyZRkmNEK8tWr9VCo')
