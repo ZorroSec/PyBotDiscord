@@ -15,3 +15,4 @@ async def on_message(msg: discord.Message):
     await bot.process_commands(msg)
 
 from app.commands import ping
+from app.commands import cotation
